@@ -1,0 +1,10 @@
+.top-banner {
+    max-height: 200px;
+    min-width: 300px;
+    max-width: fit-content;
+  }
+
+.pop {
+    height: max-content;
+    /* width: fit-content; */
+}
