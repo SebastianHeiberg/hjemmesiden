@@ -1,10 +1,31 @@
 .top-banner {
     max-height: 200px;
     min-width: 300px;
-    max-width: fit-content;
+    max-width: 600px;
   }
 
 .pop {
     height: max-content;
     /* width: fit-content; */
+    
+}
+
+.card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
 }
