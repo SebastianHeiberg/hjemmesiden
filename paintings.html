@@ -1,34 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Gallery</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div id="gallery"></div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-  <script>
-    const gallery = document.getElementById('gallery');
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  </head>
   
-    fetch('https://raw.githubusercontent.com/SebastianHeiberg/hjemmesiden/main/pictures/paintings/files.json')
-      .then(response => response.json())
-      .then(files => {
-        files.forEach(file => {
-          const card = document.createElement('div');
-          card.classList.add('card');
-          const img = document.createElement('img');
-          img.src = `${file.path}`;
-          card.appendChild(img);
-          if (file.description) {
-            const title = document.createElement('h3');
-            title.textContent = file.description;
-            card.appendChild(title);
-          }
-          gallery.appendChild(card);
-        });
-      })
-      .catch(error => console.error(error));
-  </script>
-</body>
+  <body>
+    <div class="container-fluid p-0 d-flex">
+      <img src="pictures/frontpage/top.jpg" class="img-fluid top-banner mx-auto" alt="Top banner image">
+    </div>
+
+    <header>
+      <nav class="nav justify-content-center border border-dark">
+        <a class="nav-link active text-dark" href="index.html" aria-current="page">Frontpage</a>
+        <a class="nav-link active text-dark" href="#" aria-current="page">Sculptures</a>
+        <a class="nav-link active text-dark" href="paintings.html" aria-current="page">Paintings</a>      
+        <a class="nav-link active text-dark" href="#" aria-current="page">Drawings</a>      
+        <a class="nav-link active text-dark" href="#" aria-current="page">Contact</a>      
+      </nav>
+    </header>
+
+    <main>
+      <div id="gallery"></div>
+
+      <script>
+        const gallery = document.getElementById('gallery');
+      
+        fetch('https://raw.githubusercontent.com/SebastianHeiberg/hjemmesiden/main/pictures/paintings/files.json')
+          .then(response => response.json())
+          .then(files => {
+            files.forEach(file => {
+              const card = document.createElement('div');
+              card.classList.add('card');
+              const img = document.createElement('img');
+              img.src = `${file.path}`;
+              card.appendChild(img);
+              if (file.description) {
+                const title = document.createElement('h3');
+                title.textContent = file.description;
+                card.appendChild(title);
+              }
+              gallery.appendChild(card);
+            });
+          })
+          .catch(error => console.error(error));
+      </script>
+    </main>
+
+    <footer>
+<!-- something -->
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  </body>
 </html>
