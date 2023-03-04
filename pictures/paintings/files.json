@@ -6,18 +6,40 @@
     },
     
     {
+<<<<<<< HEAD
     "path": "https://github.com/SebastianHeiberg/hjemmesiden/raw/main/pictures/paintings/JPG_Test.jpg",
     "description": "First painting"
     },
 
     {
         "path": "https://github.com/SebastianHeiberg/hjemmesiden/raw/main/pictures/paintings/JPG_Test1.jpg",
+=======
+      "path": "https://raw.githubusercontent.com/SebastianHeiberg/hjemmesiden/main/pictures/paintings/pop.jpg",
+      "description": "First painting"
+    } ,
+
+    {
+      "path": "https://raw.githubusercontent.com/SebastianHeiberg/hjemmesiden/main/pictures/paintings/JPG_Test.jpg",
+      "description": "First painting"
+      },
+
+      {
+        "path": "https://raw.githubusercontent.com/SebastianHeiberg/hjemmesiden/main/pictures/paintings/JPG_Test1.jpg",
+>>>>>>> 4e8beaeb74bf8abec23905160f783713e4290787
         "description": "First painting"
     },
 
+<<<<<<< HEAD
     {
         "path": "https://github.com/SebastianHeiberg/hjemmesiden/raw/main/pictures/paintings/JPG_Test2.jpg",
         "description": "First painting"
     }
 
   ]
+=======
+      {
+        "path": "https://raw.githubusercontent.com/SebastianHeiberg/hjemmesiden/main/pictures/paintings/JPG_Test2.jpg",
+        "description": "First painting"
+      }
+  ]
+>>>>>>> 4e8beaeb74bf8abec23905160f783713e4290787
